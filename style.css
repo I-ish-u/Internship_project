@@ -596,6 +596,7 @@ span{
     padding-top: 20px;
     /* padding: 50px 20px; */
     background-color: #ffffff;
+    padding-bottom: 30px;
 }
 
 .firstpart{
@@ -669,6 +670,79 @@ span{
 .nav-btn:hover {
     background-color: #28a745;
     color: #ffffff;
+}
+
+
+/* Subscription Section */
+.subscription-section {
+    position: relative;
+    z-index: 2;
+    background-color: #111111; /* Dark background */
+    padding: 30px 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.subscription-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.subscription-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #00d90d; /* Green button */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #00b200; /* Darker green on hover */
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: #000000; /* Footer dark background */
+    padding: 20px 0;
+    color: #888888;
+    font-size: 14px;
 }
 
 
