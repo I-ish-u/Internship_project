@@ -51,7 +51,7 @@ span{
     font-weight: 600;
 }
 
-.btn1 {
+.nav-button {
     background-color: #1bbd21;
     color: white;
     padding: 10px 20px;
@@ -61,12 +61,12 @@ span{
     font-size: 16px;
 }
 
-.btn1:hover {
+.nav-button:hover {
     transform: scale(1.2);
 }
 
 /* Hero Section */
-.hero {
+.hero-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ span{
     height: 100%;
     width: 100%;
 }
-.hero::before {
+.hero-main::before {
     content: "";
     position: absolute;
     top: 0;
@@ -101,7 +101,6 @@ span{
 
 .hero-content {
     max-width: 700px;
-    /* height: 100vh; */
 }
 
 .hero-content h1 {
@@ -117,7 +116,7 @@ span{
     color: #666;
 }
 
-.cta-button {
+.hero-button {
     background-color: #1bbd21;
     color: #fff;
     padding: 15px 30px;
@@ -127,7 +126,7 @@ span{
     font-size: 18px;
 }
 
-.cta-button:hover {
+.hero-button:hover {
     background-color: #45a049;
 }
 
@@ -151,13 +150,13 @@ span{
     z-index: 2;
   }
   
-  .container1 {
+  .stats-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-     flex-wrap: wrap; /*Allows items to wrap on smaller screens */
+    flex-wrap: wrap; /*Allows items to wrap on smaller screens */
   }
   
   .stat-box {
@@ -184,9 +183,9 @@ span{
     font-weight: 700;
     color: #1a1a1a; 
   }
-  /* section 3 */
-
-.component{
+  
+/* section 3 */
+.discover-component{
     position: relative;
     z-index: 2;
     display: flex;
@@ -195,10 +194,9 @@ span{
     height: 80vh;
     background-color: rgba(6, 6, 6, 0.406);
 }
- .container {
+ .discover-container {
     display: flex;
     height: 90%;
-     /* Green border */
     border-radius: 8px;
     width: 95%;
     overflow: hidden;
@@ -210,7 +208,6 @@ span{
     margin: 20px;
     height: 90%;
     border: 1px solid #00c853;
-    /* max-width: 900px; Adjust the width of the image */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -219,7 +216,6 @@ span{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -235,7 +231,7 @@ span{
     margin-bottom: 20px;
 }
 
-.btn {
+.discover-button {
     display: inline-block;
     width: 170px;
     background-color: #00c853;
@@ -246,7 +242,7 @@ span{
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.discover-button:hover {
     background-color: #00a347;
 }
 
@@ -594,12 +590,11 @@ span{
     z-index: 2;
     text-align: center;
     padding-top: 20px;
-    /* padding: 50px 20px; */
     background-color: #ffffff;
     padding-bottom: 30px;
 }
 
-.firstpart{
+.news-firstpart{
     display: flex;
     align-items: center;
     justify-content: end;
@@ -651,7 +646,6 @@ span{
 }
 
 .news-navigation {
-    /* margin-top: 10px; */
     margin-left: 32%;
     margin-right: 50px;
 }
