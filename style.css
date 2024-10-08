@@ -144,7 +144,7 @@ span{
 
 /* Stats Section */
 .stats-section {
-    background-color: #00b300; /* Green background color */
+    background-color: #00b300; 
     padding: 50px 0;
     color: #fff;
     position: relative;
@@ -157,7 +157,7 @@ span{
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+     flex-wrap: wrap; /*Allows items to wrap on smaller screens */
   }
   
   .stat-box {
@@ -167,7 +167,7 @@ span{
   }
   
   .icon img {
-    width: 60px; /* Adjust icon size */
+    width: 60px;
     height: 60px;
     margin-bottom: 20px;
     border-radius: 50%;
@@ -182,7 +182,7 @@ span{
   .stat-box p {
     font-size: 20px;
     font-weight: 700;
-    color: #1a1a1a; /* Dark text for description */
+    color: #1a1a1a; 
   }
   /* section 3 */
 
@@ -243,7 +243,7 @@ span{
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    /* transition: background-color 0.3s ease; */
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -325,18 +325,18 @@ span{
 .companies-content p {
     font-size: 18px;
     margin-bottom: 40px;
-    color: #000; /* Adjust color for better contrast */
+    color: #000; 
 }
 
 .company-logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Space between logos */
+    gap: 30px;
 }
 
 .company-logos img {
-    width: 150px; /* Adjust the size of logos */
+    width: 150px; 
     filter: contrast(1.5); 
     mix-blend-mode: multiply;
 }
@@ -345,7 +345,7 @@ span{
 .features-section1{
     position: relative;
     z-index: 2;
-    background-color: #e0f7f9; /* Light blue background */
+    background-color: #e0f7f9; 
     padding: 60px 20px;
     text-align: center;
 }
@@ -373,9 +373,9 @@ span{
 
 .feature-card {
     background-color: #fff;
-    border: 2px solid #00d90d; /* Green border */
+    border: 2px solid #00d90d; 
     border-radius: 10px;
-    width: 400px; /* Adjust card size */
+    width: 400px; 
     text-align: left;
     display: flex;
     align-items: center;
@@ -428,7 +428,7 @@ span{
     position: relative;
     z-index: 2;
     background-color: #ffffff;
-    border: 2px solid #00d90d; /* Green border */
+    border: 2px solid #00d90d; 
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -677,7 +677,7 @@ span{
 .subscription-section {
     position: relative;
     z-index: 2;
-    background-color: #111111; /* Dark background */
+    background-color: #111111; 
     padding: 30px 0;
     text-align: center;
     color: #ffffff;
@@ -719,7 +719,7 @@ span{
 
 .subscription-form button {
     padding: 10px 20px;
-    background-color: #00d90d; /* Green button */
+    background-color: #00d90d;
     border: none;
     border-radius: 5px;
     color: #ffffff;
@@ -729,7 +729,7 @@ span{
 }
 
 .subscription-form button:hover {
-    background-color: #00b200; /* Darker green on hover */
+    background-color: #00b200; 
 }
 
 /* Footer */
@@ -739,7 +739,7 @@ span{
     justify-content: center;
     position: relative;
     z-index: 2;
-    background-color: #000000; /* Footer dark background */
+    background-color: #000000; 
     padding: 20px 0;
     color: #888888;
     font-size: 14px;
