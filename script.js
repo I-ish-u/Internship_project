@@ -135,3 +135,77 @@
     })
   }
   testimonial()
+  function team(){
+    const section=document.querySelectorAll(".team-member");
+    const button=document.querySelector(".team-button");
+    section.forEach((section) => {
+      section.addEventListener("mouseover", function () {
+        section.style.transform = "scale(1.1)";
+        section.style.transition="transform 0.2s"
+        section.style.border = "2px solid orange";
+      })
+      section.addEventListener("mouseout",function(){
+        section.style.transform="scale(1)"
+        section.style.transition="transform 0.2s"
+        section.style.border=""
+      })
+    });
+   
+    button.addEventListener("mouseover",function(){
+      button.style.transform="scale(1.2)"
+      button.style.transition="transform 0.2s"
+    })
+    button.addEventListener("mouseout",function(){
+      button.style.transform="scale(1)"
+      button.style.transition="transform 0.2s"
+    })
+  }
+  team()
+  function news(){
+    const section=document.querySelectorAll(".news-item")
+    const button=document.querySelectorAll(".nav-btn")
+    const button_left=document.querySelector(".left")
+    const button_right=document.querySelector(".right")
+    section.forEach((section)=>{
+        section.addEventListener("mouseover",function(){
+          section.style.transform="scale(1.1)"
+          section.style.transition="transform 0.2s"
+        })
+        section.addEventListener("mouseout",function(){
+          section.style.transform="scale(1)"
+          section.style.transition="transform 0.2s"
+        })
+    })
+    button.forEach((button)=>{
+      button.addEventListener("mouseover",()=>{
+        button.style.transform="scale(1.2)"
+        button.style.transition="transform 0.2s"
+      })
+      button.addEventListener("mouseout",()=>{
+        button.style.transform="scale(1)"
+        button.style.transition="transform 0.2s"
+      })
+    })
+    button_left.addEventListener("click",function(){
+      alert("To Move The Slide Left")
+    })
+    button_right.addEventListener("click",function(){
+      alert("To Move The Slide Right")
+    })
+  }
+  news()
+
+function subscribe_button(){
+  const button=document.querySelector(".Subscribe")
+  button.addEventListener("mouseover",()=>{
+    button.style.transform="scale(1.1)"
+    button.style.transition="transform 0.2s"
+    button.style.backgroundColor="orange"
+  })
+  button.addEventListener("mouseout",()=>{
+    button.style.transform="scale(1)"
+    button.style.transition="transform 0.2s"
+    button.style.backgroundColor=""
+  })
+}
+subscribe_button()
