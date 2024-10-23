@@ -196,7 +196,11 @@
   news()
 
 function subscribe_button(){
-  const button=document.querySelector(".Subscribe")
+  const button=document.getElementById("subscription")
+  const stable="it will happen"
+  button.addEventListener("click",()=>{
+    alert(`doesnt matter ${stable}`)
+  })
   button.addEventListener("mouseover",()=>{
     button.style.transform="scale(1.1)"
     button.style.transition="transform 0.2s"
