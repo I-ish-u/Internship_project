@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body onload=resetForm()>
+    <div class="form-container">
+        <div class="registration-form">
+            <h2>Subscription Form</h2>
+            <form action="#" name="myForm" onsubmit="return validateForm()" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email"    placeholder="Email address" required>
+                <input type="text"  name="country"  placeholder="Country" required>
+                <input type="tel"  name="phone"  placeholder="Phone" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="cpassword" placeholder="Confirm Password" required>
+                <button type="submit">Create Account</button>
+            </form>  
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

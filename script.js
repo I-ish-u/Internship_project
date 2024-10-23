@@ -164,8 +164,6 @@
   function news(){
     const section=document.querySelectorAll(".news-item")
     const button=document.querySelectorAll(".nav-btn")
-    const button_left=document.querySelector(".left")
-    const button_right=document.querySelector(".right")
     section.forEach((section)=>{
         section.addEventListener("mouseover",function(){
           section.style.transform="scale(1.1)"
@@ -186,21 +184,11 @@
         button.style.transition="transform 0.2s"
       })
     })
-    button_left.addEventListener("click",function(){
-      alert("To Move The Slide Left")
-    })
-    button_right.addEventListener("click",function(){
-      alert("To Move The Slide Right")
-    })
   }
   news()
 
 function subscribe_button(){
   const button=document.getElementById("subscription")
-  const stable="it will happen"
-  button.addEventListener("click",()=>{
-    alert(`doesnt matter ${stable}`)
-  })
   button.addEventListener("mouseover",()=>{
     button.style.transform="scale(1.1)"
     button.style.transition="transform 0.2s"
@@ -213,3 +201,32 @@ function subscribe_button(){
   })
 }
 subscribe_button()
+
+
+// slides
+const container1 = document.getElementById("container1");
+const container2 = document.getElementById("container2");
+const container3 = document.getElementById("container3");
+
+
+const array = [container1.innerHTML, container2.innerHTML, container3.innerHTML];
+
+
+const maincontainer = document.querySelector(".news-container");
+
+
+maincontainer.innerHTML = array[0];
+
+let imgIndex = 0; 
+
+
+function previousImg() {
+  imgIndex = (imgIndex - 1 + array.length) % array.length; 
+  maincontainer.innerHTML = array[imgIndex];
+}
+
+
+function nextImg() {
+  imgIndex = (imgIndex + 1) % array.length; 
+  maincontainer.innerHTML = array[imgIndex];
+}
